@@ -13,7 +13,9 @@ console.log("El numero ingresado es: " + numerousuario);
 
 // Validar si el numero ingresado es igual al numero secreto
 if (numerousuario == numeroSecreto) {
-    alert("¡Felicidades! Has adivinado el numero secreto.");
+
+    //Usamos comillas invertidas para interpolar el valor de la variable
+    alert(`Acertaste el numero secreto:  ${numeroSecreto}`);
 } else {
-    alert("Lo siento, el numero secreto era: ");
+    alert(`Lo siento, el numero secreto era: ${numeroSecreto}`);
 }
