@@ -1,5 +1,5 @@
 //Variables
-let numeroSecreto = 7;
+let numeroSecreto = Math.floor(Math.random() * 10) + 1; // Genera un numero aleatorio entre 1 y 100
 let numerousuario = 0;
 let intentos = 1;
 let maximosIntentos = 3;
