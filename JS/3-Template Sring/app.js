@@ -3,7 +3,7 @@
 
 // Variable para almacenar numero
 let numerousuario = 0;
-let numeroSecreto = 8;
+let numeroSecreto = 7;
 
 // Solicitar un numero al usuario
 numerousuario = prompt("Indicame un numero por favor:");
@@ -17,5 +17,9 @@ if (numerousuario == numeroSecreto) {
     //Usamos comillas invertidas para interpolar el valor de la variable
     alert(`Acertaste el numero secreto:  ${numeroSecreto}`);
 } else {
-    alert(`Lo siento, el numero secreto era: ${numeroSecreto}`);
+    if (numerousuario < numeroSecreto) {
+        alert("El numero ingresado es menor al numero secreto");
+    } else {
+        alert(`El numero ingresado es mayor al numero secreto`);
+    }
 }
